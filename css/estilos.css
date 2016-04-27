@@ -1,1 +1,39 @@
 @charset "utf-8";
+
+body {
+  text-align: center;
+}
+
+.lcd {
+  display: inline-block;
+  background-color: #62DD6E;
+  border:10px solid #333;
+}
+
+.lcd .linha {
+  margin:5px 0px;
+  display:block;
+}
+
+
+.lcd .linha .digito{
+    margin:0px 5px;
+    display:inline-block;
+    width: 80px;
+
+}
+
+.lcd .linha .digito .pixel {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #62DD6E;
+    margin:0px;
+}
+
+.lcd .linha .digito .pixel.off {
+    background: #5EFB6E;
+}
+
+.lcd .linha .digito .pixel.on {
+    background: #484848;
+}
